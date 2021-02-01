@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script> 
+        // Declaring variable
+        // If we declare the variable with const it can not be changed.
+        const name = Rabi;
+        console.log(name);
+
+        // Declaring array with const.
+        // If we declare an array with const new elements can be added or push or pop. But
+        // the entire array can't be chaneged.
+        const numbers = [7, 8, 10];
+        numbers[1] = 12;
+        numbers.push(15);
+        numbers.pop(7);
+
+        // Similarly in case of an obeject we can update it but can't replace it.
+        const person = {name: "Rabi", age: 24}; 
+
+        // Uses of let.
+        // let is also called scope variable.
+        let sum = 0;
+        for(let i = 0; i>=10; i++){
+            sum = sum + i;
+        }
+        // i can not be accessed.
+        console.log(i);
+
+        // Default parameter.
+        // ES5
+
+        function add (num1, num2) {
+            if (num2 == undefined){
+                num2 = 0;
+            }
+            // num2 = num2 || 0;
+            return num1 + num2;
+        }
+        const total = add(10);
+        console.log(total);
+        // ES6 default parameter.
+        
+        function add (num1, num2 = 20) {
+          return num1 + num2;
+        }
+        const total = add(10 , 25);
+        console.log(total);
+
+
+
+    </script>
+</body>
+</html>
